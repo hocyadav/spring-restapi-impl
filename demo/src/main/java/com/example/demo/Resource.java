@@ -6,9 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/restapi") // http://localhost:8081 --to--> http://localhost:8081/restapi
 public class Resource {
 	
 	@Autowired
@@ -53,7 +55,7 @@ public class Resource {
 	}
 	
 	
-	@GetMapping("db")
+	@GetMapping("/db")
 	public List<Alien> fun3() {
 		
 		List<Alien> list  = (List<Alien>) repo.findAll();
