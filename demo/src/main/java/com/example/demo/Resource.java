@@ -19,7 +19,6 @@ public class Resource {
 		
 		List<Alien> list = new LinkedList<>();
 		
-		
 		Alien obj = new Alien();
 		obj.id = 1;
 		obj.name = "hari";
@@ -31,7 +30,6 @@ public class Resource {
 		list.add(obj);
 		list.add(obj2);
 		
-		
 		return list;
 	}
 	
@@ -39,7 +37,6 @@ public class Resource {
 	public List<Alien> fun2() {
 		
 		List<Alien> list = new LinkedList<>();
-		
 		
 		Alien obj = new Alien();
 		obj.id = 3;
@@ -52,7 +49,6 @@ public class Resource {
 		list.add(obj);
 		list.add(obj2);
 		
-		
 		return list;
 	}
 	
@@ -60,11 +56,7 @@ public class Resource {
 	@GetMapping("db")
 	public List<Alien> fun3() {
 		
-		//List<Alien> list = new LinkedList<>();
-		
-		
 		List<Alien> list  = (List<Alien>) repo.findAll();
-		
 		
 		return list;
 	}
