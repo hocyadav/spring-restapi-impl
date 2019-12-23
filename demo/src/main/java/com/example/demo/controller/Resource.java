@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.Alien;
+import com.example.demo.repository.DbPostgres;
 
 @RestController
 @RequestMapping("/restapi") // http://localhost:8081 --to--> http://localhost:8081/restapi
