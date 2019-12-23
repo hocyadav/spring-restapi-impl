@@ -14,26 +14,26 @@ public class Resource {
 	@Autowired
 	DbPostgres repo;
 	
-//	@GetMapping
-//	public List<Alien> fun() {
-//		
-//		List<Alien> list = new LinkedList<>();
-//		
-//		
-//		Alien obj = new Alien();
-//		obj.id = 1;
-//		obj.name = "hari";
-//		
-//		Alien obj2 = new Alien();
-//		obj2.id = 2;
-//		obj2.name = "yadav";
-//		
-//		list.add(obj);
-//		list.add(obj2);
-//		
-//		
-//		return list;
-//	}
+	@GetMapping
+	public List<Alien> fun() {
+		
+		List<Alien> list = new LinkedList<>();
+		
+		
+		Alien obj = new Alien();
+		obj.id = 1;
+		obj.name = "hari";
+		
+		Alien obj2 = new Alien();
+		obj2.id = 2;
+		obj2.name = "yadav";
+		
+		list.add(obj);
+		list.add(obj2);
+		
+		
+		return list;
+	}
 	
 	@PostMapping
 	public List<Alien> fun2() {
