@@ -2,8 +2,10 @@ package com.example.demo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="table1") // give table name here
 public class Alien {
 	
 	@Id
